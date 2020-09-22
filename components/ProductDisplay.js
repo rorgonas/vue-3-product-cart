@@ -19,6 +19,7 @@ app.component('product-display', {
         <p v-else>Out of Stock</p>
 
         <p>Shipping: {{ shipping }}</p>
+
         <ul>
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
@@ -35,12 +36,18 @@ app.component('product-display', {
           class="button" 
           :class="{ disabledButton: !inStock }" 
           :disabled="!inStock" 
-          v-on:click="addToCart">
+          @click="addToCart">
           Add to Cart
+        </button>
+        <button 
+          class="button" 
+          @click="removeFromCart">
+          Remove Cart
         </button>
         
         <review-list v-if="reviews.length > 0" :reviews="reviews"></review-list>
         <review-form @review-submitted="addReview"></review-form>
+        
       </div>
     </div>
   </div>`,
@@ -59,7 +66,10 @@ app.component('product-display', {
   },
   methods: {
       addToCart() {
-          this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
+          this.$emit('add-to-cart', this.variants[this.selectedVariant].id);
+      },
+      removeFromCart() {
+          this.$emit('remove-from-cart', this.variants[this.selectedVariant].id);
       },
       updateVariant(index) {
           this.selectedVariant = index
@@ -85,4 +95,4 @@ app.component('product-display', {
         return 2.99
       }
   }
-})
+});
