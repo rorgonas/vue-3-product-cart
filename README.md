@@ -4,3 +4,6 @@ Throughout this course, I practiced the fundamentals of Vue.js and build an app 
 ## Lesson Resources
 - [CodePen](https://codepen.io/VueMastery/projects/public?cursor=ZD0xJm89MCZwPTEmdj01MTcwODI=)
 - [Github Repo](https://github.com/Code-Pop/Intro-to-Vue-3)
+
+## Final product
+![Screenshot](https://github.com/rorgonas/vue-3-product-cart/images/product-screenshot.png)

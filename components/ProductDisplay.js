@@ -44,11 +44,11 @@ app.component('product-display', {
           @click="removeFromCart">
           Remove Cart
         </button>
-        
-        <review-list v-if="reviews.length > 0" :reviews="reviews"></review-list>
-        <review-form @review-submitted="addReview"></review-form>
-        
       </div>
+      
+       <review-list v-if="reviews.length > 0" :reviews="reviews"></review-list>
+       <review-form @review-submitted="addReview"></review-form>
+        
     </div>
   </div>`,
   data() {
