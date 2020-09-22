@@ -6,4 +6,4 @@ Throughout this course, I practiced the fundamentals of Vue.js and build an app 
 - [Github Repo](https://github.com/Code-Pop/Intro-to-Vue-3)
 
 ## Final product
-![Screenshot](https://github.com/rorgonas/vue-3-product-cart/images/product-screenshot.png)
+![Screenshot](https://github.com/rorgonas/vue-3-product-cart/blob/final/images/product-screenshot.png)
